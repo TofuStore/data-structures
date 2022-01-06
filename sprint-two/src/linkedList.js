@@ -30,19 +30,15 @@ var LinkedList = function() {
       }
     };
     foundInNode(list.head, target);
-
     return targetFound;
   };
-
   return list;
 };
 
 var Node = function(value) {
   var node = {};
-
   node.value = value;
   node.next = null;
-
   return node;
 };
 
