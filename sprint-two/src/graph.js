@@ -35,10 +35,6 @@ Graph.prototype.removeNode = function(node) {
   for (let i = 0; i < edgesToRemove.length; i++) {
     this.removeEdge(node, edgesToRemove[i]);
   }
-
-  // _.each(edgesToRemove, function(edge) {
-  //   this.removeEdge(node, edge);
-  // });
 };
 
 // Returns a boolean indicating whether two specified nodes are connected.  Pass in the values contained in each of the two nodes.
