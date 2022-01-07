@@ -1,5 +1,3 @@
-
-
 // Instantiate a new graph
 var Graph = function(value) {
   this.nodes = {};
@@ -92,6 +90,20 @@ Graph.prototype.forEachNode = function(cb) {
 
 /*
  * Complexity: What is the time complexity of the above functions?
+
+ * addNode: O(1) <- no traversal needed
+ *
+ * contains: O(n) <- must traverse entire list to find match
+ *
+ * removeNode: O(n^2) <-  must traverse entire list and their edges to remove each node
+ *
+ * hasEdge: O(n^2) <- must traverse entire list and their edges to find each edge
+ *
+ * addEdge: O(n) <- must traverse entire list to find correct node to add edge
+ *
+ * removeEdge: O(n^2) <- must traverse entire list and their edges to remove each edge
+ *
+ * forEachNode: O(n) <- must traverse entire list to apply cb func to each
  */
 
 

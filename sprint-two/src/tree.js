@@ -31,4 +31,9 @@ treeMethods.contains = function(target) {
 
 /*
  * Complexity: What is the time complexity of the above functions?
+ *
+ * addChild: O(1) <- no iteration needed
+ *
+ * contains: O(n) <- might have to traverse entire tree to find
+ *
  */

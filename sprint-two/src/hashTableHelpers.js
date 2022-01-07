@@ -56,4 +56,14 @@ var getIndexBelowMaxForKey = function(str, max) {
 
 /*
  * Complexity: What is the time complexity of the above functions?
+ *
+ * get: O(1) <- looking at a direct value
+ *
+ * set: O(1) <- <- looking at a direct value
+ *
+ * each: O(n) <- technically O(1) as it is only used to traverse the very small buckets
+ *
+ * checkLimit: O(1) <- only constant if statements
+ *
+ * getIndexBelowMaxForKey: O(n) <- has to iterate through str.length
  */

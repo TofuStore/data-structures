@@ -44,6 +44,12 @@ HashTable.prototype.remove = function(k) {
 
 /*
  * Complexity: What is the time complexity of the above functions?
+ *
+ * insert: O(1) <- only needs to traverse in case of collision, traversal is very small
+ *
+ * retreve: O(1) <- only needs to traverse in case of collision, traversal is very small
+ *
+ * remove: O(1) <- only needs to traverse in case of collision, traversal is very small
  */
 
 

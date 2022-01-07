@@ -33,4 +33,10 @@ setPrototype.remove = function(item) {
 
 /*
  * Complexity: What is the time complexity of the above functions?
+ *
+ * add: O(1) <- no iteration needed
+ *
+ * comtains: O(n) <- have to iterate through set to find correct item
+ *
+ * remove: O(n) <- have to iterate through set to find correct item to remove
  */

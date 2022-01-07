@@ -55,7 +55,10 @@ binarySearchTreeMethods.depthFirstLog = function(cb) {
 
 /*
  * Complexity: What is the time complexity of the above functions?
+
  * insert: O(log n) <- only needs to traverse < or > values
+ *
  * contains: O(log n) <- only needs to traverse < or > values
+ *
  * depthFirstLog: O(n) <- must traverse entire tree
  */

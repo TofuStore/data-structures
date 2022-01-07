@@ -44,4 +44,10 @@ var Node = function(value) {
 
 /*
  * Complexity: What is the time complexity of the above functions?
+ *
+ * addToTail: O(1) <- we know exact location
+ *
+ * removeHead: O(1) <- we know exact location
+ *
+ * contains: O(n) <- we have to recursively check each node in the list
  */
