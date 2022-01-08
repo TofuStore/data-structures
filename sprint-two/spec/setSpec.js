@@ -24,4 +24,21 @@ describe('set', function() {
     expect(set.contains('Mel Gibson')).to.equal(false);
   });
 
+  it('should add and remove multiple values from a set', function() {
+    set.add('Mel Gibson');
+    set.add('Susan Sarandon');
+    set.add('Danny Glover');
+    expect(set.contains('Danny Glover')).to.equal(true);
+    expect(set.contains('Susan Sarandon')).to.equal(true);
+    expect(set.contains('Mel Gibson')).to.equal(true);
+
+    set.remove('Mel Gibson');
+    set.remove('Susan Sarandon');
+    set.remove('Danny Glover');
+    expect(set.contains('Danny Glover')).to.equal(false);
+    expect(set.contains('Susan Sarandon')).to.equal(false);
+    expect(set.contains('Mel Gibson')).to.equal(false);
+  });
+
+
 });
